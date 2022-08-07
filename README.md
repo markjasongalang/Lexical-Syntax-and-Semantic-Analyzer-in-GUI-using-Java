@@ -9,7 +9,7 @@ The programming language that can be used here is only concocted for educational
 > <b>var</b> - declares a new variable (note: all variables must be declared first before using them)  
  <b>input</b> - reads a variable from the console  
  <b>output</b> - displays (in the console) the value of the variable or a mathematical expression that was specified
-### Rules
+### Programming Language Constraints
 - All statements will end in a semi-colon
 - White is not significant (e.g., a+b is equal to a + b)
 - Comments begin with /* and end with */ and can extend in multiple lines
@@ -18,6 +18,8 @@ The programming language that can be used here is only concocted for educational
 - Parentheses may be used in mathematical expressions
 - Identifiers may only consist of uppercase and lowercase letters, underscores, and digits
 - An idenfitier may not begin with a number
+### Syntax Rules (that I created)
+https://drive.google.com/file/d/1_VOKo4xagQBumHLjf8uXAicxHtOG98D9/view?usp=sharing
 ### 3 Main Parts of the Program
 <b>Code Editor</b> - this is where you can use the made-up programming language wherein the compiling phases were based upon  
 <b>Lexical Analyzer</b> - this is where you can view the tokens that were extracted from the code  
