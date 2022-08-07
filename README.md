@@ -30,6 +30,8 @@ https://drive.google.com/file/d/1_VOKo4xagQBumHLjf8uXAicxHtOG98D9/view?usp=shari
 <b>Load</b> - loads a text file into the code editor  
 <b>Undo</b> - repeats the previous operation  
 <b>Redo</b> - repeats the operation that was undid
+### Extra Feature
+- syntax highlighting
 ### Screenshots
 ![image](https://user-images.githubusercontent.com/104606066/183290617-5e829661-a9ca-4b9e-b10a-89967c60745f.png)
 ---
