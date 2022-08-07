@@ -1,4 +1,4 @@
-# Lexical-Syntax-and-Semantic-Analyzer-in-GUI-using-Java
+## Lexical-Syntax-and-Semantic-Analyzer-in-GUI-using-Java
 ## Quick Info
 This project consists of the first three phases of compiling a programming language.  
 1. <b>Lexical Analysis</b> - breaking the code into tokens (e.g., <INT, 65>, <PLUS, +>, etc...)  
