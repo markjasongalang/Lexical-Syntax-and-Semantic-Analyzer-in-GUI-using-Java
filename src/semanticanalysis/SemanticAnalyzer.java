@@ -108,7 +108,8 @@ public class SemanticAnalyzer {
 				continue;
 			}
 			
-			if ((i == 0 && exp[i] == '-') || (i - 1 >= 0 && exp[i] == '-' && isOperator(exp[i-1]))) {
+			if ((i == 0 && exp[i] == '-') || (i - 1 >= 0 && exp[i] == '-' && isOperator(exp[i-1]) ||
+				(i - 1 >= 0 && exp[i] == '-' && exp[i-1] == '('))) {
 				if (negative) {
 					semErrList.add(new SemanticError("Invalid expression", currentToken.getLn()));
 					invalid = true;
@@ -128,11 +129,11 @@ public class SemanticAnalyzer {
 					digitExtracted *= -1;
 					negative = false;
 				}
-				values.push(digitExtracted);				
+				values.push(digitExtracted);
 				i--;
 			} else if (exp[i] == '(') {
 				ops.push(exp[i]);
-			} else if (exp[i] == ')') {
+			} else if (exp[i] == ')' && values.size() > 1) {
 				while (ops.peek() != '(') {
 					values.push(applyOp(ops.pop(), values.pop(), values.pop()));
 				}
@@ -147,7 +148,7 @@ public class SemanticAnalyzer {
 			}
 		}
 		
-		while (!ops.empty()) {
+		while (!ops.empty() && values.size() > 1) {
 			values.push(applyOp(ops.pop(), values.pop(), values.pop()));
 		}
 		

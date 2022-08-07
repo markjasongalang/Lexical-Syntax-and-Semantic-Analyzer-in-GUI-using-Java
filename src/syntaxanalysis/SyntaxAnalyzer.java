@@ -303,7 +303,8 @@ public class SyntaxAnalyzer {
 				}
 				
 				if (Lexer.isRightParenToken(previousToken) || Lexer.isIntegerToken(previousToken) || 
-					Lexer.isIdentifierToken(previousToken) || Lexer.isDecimalToken(previousToken)) {
+					Lexer.isIdentifierToken(previousToken) || Lexer.isDecimalToken(previousToken) ||
+					Lexer.isLeftParenToken(previousToken)) {
 					
 					if (Lexer.isLeftParenToken(nextToken) || Lexer.isIntegerToken(nextToken) || 
 						Lexer.isIdentifierToken(nextToken) || nextToken.getToken().equals(Lexer.TT_MINUS) ||
@@ -331,7 +332,8 @@ public class SyntaxAnalyzer {
 					Lexer.isOutputKeyword(previousToken) || Lexer.isLeftParenToken(previousToken)) {
 					
 					if (Lexer.isIdentifierToken(nextToken) || Lexer.isIntegerToken(nextToken) || 
-						Lexer.isDecimalToken(nextToken) || Lexer.isLeftParenToken(nextToken)) {
+						Lexer.isDecimalToken(nextToken) || Lexer.isLeftParenToken(nextToken) ||
+						nextToken.getToken().equals(Lexer.TT_MINUS)) {
 						
 						valid = true;
 					}
