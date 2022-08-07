@@ -13,7 +13,7 @@ The programming language that can be used here is only concocted for educational
 - All statements will end in a semi-colon
 - White is not significant (e.g., a+b is equal to a + b)
 - Comments begin with /* and end with */ and can extend in multiple lines
-- The value of all variables must be integers or decimals.
+- The value of all variables must be integers or decimals (positive or negative).
 - The only operations allowed are: {+, -, *, /, =}
 - Parentheses may be used in mathematical expressions
 - Identifiers may only consist of uppercase and lowercase letters, underscores, and digits
