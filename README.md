@@ -36,5 +36,5 @@ https://drive.google.com/file/d/1_VOKo4xagQBumHLjf8uXAicxHtOG98D9/view?usp=shari
 ![image](https://user-images.githubusercontent.com/104606066/183290654-dbfffa3d-5178-4f31-a38b-e8f2ec784642.png)
 ---
 ![image](https://user-images.githubusercontent.com/104606066/183290878-dfde69c8-e44f-4f95-afa6-4e92333bc741.png)
-### Note by the developer
+### Note from the developer
 If you're going to run this project, then it is preferable to use Eclipse IDE since that's the one that I used.
