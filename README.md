@@ -23,4 +23,10 @@ The programming language that can be used here is only concocted for educational
 <b>Lexical Analyzer</b> - this is where you can view the tokens that were extracted from the code  
 <b>Console</b> - this is where the result of the code (assuming it's correct) is displayed and it is also interactive  
 ### Buttons
-<b>Compile & Run</b> - 
+<b>Compile & Run</b> - once clicked, the code undergoes the first three phases of compiling (Lexical, Syntax, and Semantic Analysis), and then the result of the code is displayed in the console (however, if the code is incorrect, then the error will be displayed instead)  
+<b>Save</b> - creates a text file wherein the code will be saved (the name of the file is an input)  
+<b>Load</b> - loads a text file into the code editor  
+<b>Undo</b> - repeats the previous operation  
+<b>Redo</b> - repeats the operation that was undid
+### Screenshots
+
