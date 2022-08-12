@@ -12,6 +12,7 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.TreeSet;
 
@@ -366,13 +367,18 @@ public class CodeEditorPanel extends JPanel implements ActionListener {
 		for (int i = 0; i < len - 1; i++) {
 			if (allCodes.charAt(i) == '/' && allCodes.charAt(i+1) == '*') {
 				int id = i + 2;
-				while (id + 1 < len && allCodes.charAt(id) != '*' && allCodes.charAt(id+1) != '/') {
+				boolean completeComment = false;
+				while (id + 1 < len) {
+					if (allCodes.charAt(id) == '*' && allCodes.charAt(id+1) == '/') {
+						completeComment = true;
+						break;
+					}
 					id++;
 				}
 				
 				int endCommentPos = -1;
 				
-				if (id + 1 < len && allCodes.charAt(id) == '*' && allCodes.charAt(id+1) == '/') {
+				if (completeComment) {
 					endCommentPos = id + 2;
 				} else {
 					endCommentPos = len;
